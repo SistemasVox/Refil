@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Refil</string>
     <string name="app_titulo">Refil, tá Caro?</string>
-    <string name="app_precoPnormal">Preço ML/KG do normal?</string>
+    <string name="app_precoPnormal">Preço $$/$$</string>
     <string name="app_preco">0.00</string>
-    <string name="app_precoPRefil">Quantidade ML/KG do normal?</string>
+    <string name="app_precoPRefil">Produto Refil</string>
     <string name="app_calcular">Calcular</string>
     <string name="app_limpar">Limpar</string>
+    <string name="app_normal">Produto Normal</string>
+    <string name="app_QTDNormal">ML/KG</string>
 </resources>
