@@ -39,8 +39,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calcular(View view) {
-        lerDados();
-        criarRsultados();
+        if (pNormal.getText().toString().isEmpty() || pRefil.getText().toString().isEmpty() || qNormal.getText().toString().isEmpty() || qRefil.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Campos Incompletos.", Toast.LENGTH_SHORT).show();
+        } else {
+            lerDados();
+            criarRsultados();
+        }
     }
 
     public void limparTela(View v) {
