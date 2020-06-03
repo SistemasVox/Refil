@@ -52,6 +52,14 @@ public class ResultadoAdapter extends BaseAdapter {
         titulo.setText(resultado.getTitulo());
         resultadoTitulo.setText(resultado.getResultado());
 
+        if (position > 1 && position < 4) {
+            if (Double.parseDouble(resultado.getResultado()) < 0) {
+                resultadoTitulo.setBackgroundColor(ctx.getResources().getColor(R.color.red));
+            } else {
+                resultadoTitulo.setBackgroundColor(ctx.getResources().getColor(R.color.blue));
+            }
+        }
+
 
         return linha;
     }

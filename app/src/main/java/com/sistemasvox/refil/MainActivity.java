@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         resultados.add(new Resultado("Preço do produto, R$:", String.valueOf(total_produto)));
         resultados.add(new Resultado("Preço do refil, R$:", String.valueOf(total_refil)));
-        resultados.add(new Resultado("O refil sai a, %% mais :", String.valueOf((((total_produto - total_refil) * 100) / total_produto))));
+        resultados.add(new Resultado("O refil sai a, %% mais :", df.format((((total_produto - total_refil) * 100) / total_produto)).replaceAll(",", ".")));
         double economia = ((qtdRefil * total_produto) - (qtdRefil * total_refil));
         resultados.add(new Resultado("Você economiza, R$:", df.format(economia).replaceAll(",", ".")));
         resultados.add(new Resultado("O Refil deveria custar: R$:", df.format(qtdRefil * total_produto).replaceAll(",", ".")));
